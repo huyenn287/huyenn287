@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		.menu{
+			width: 100%;
+			position: initial;
+			height: 63px;
+			background-color: #78b43d;
+			margin: 0 auto;
+		}
+		.logo{
+			background: url(../images/24h.jpg);
+		    width: 116px;
+            height: 59px;
+		    display: inline-block;
+		    background-position: -322px -93px;
+		}
+		.danhmuc{
+			position: absolute;
+			font-family: arial;
+			z-index: 888;
+		}
+		.danhmuc>ul{
+			text-align: left;
+			display: inline-block;
+			margin-left: 110px;
+		}
+		.danhmuc>ul>li{
+			display: inline-block;
+			position: relative;
+		    padding: 1px 5px 24px 0;
+		    background-color: #78b43d;
+	    }
+	    .danhmuc>ul>li>a{
+			color: white;
+			text-decoration: none;
+			font-size: 18px;
+		
+		}
+		.danhmuc>ul>li:hover>a{
+			color: red;
+		}
+		.danhmuc>ul>li>ul{
+			position: absolute;
+		    top: 48px;
+		    width: 215px;
+		    left: -180px;
+		    display: none;
+		}
+		.danhmuc>ul>li>ul>li{
+			   display: block;
+			    background-color: #aad862;
+		}
+		.danhmuc>ul>li>ul>li:hover{
+			    background-color: #78b43d;
+		}
+		.danhmuc>ul>li:hover>ul{
+			display: block;
+		}
+		.danhmuc>ul>ul>ul>li{
+			display: none;
+			   
+		}
+		.danhmuc>ul>ul>li: hover>li{
+			display: block;
+		}
+		.danhmuc>ul>li:after {
+            display: inline-block;
+            content: ' ';
+            height: 20px;
+            width: 1px;
+            background: #ccc;
+            margin-left: 8px;
+            vertical-align: middle;
+		} 
+		.danhmuc>ul>li>ul>li>a{
+			color: black;
+			text-decoration: none;
+		}
+		.danhmuc>ul>li>ul>li>a:hover{
+			color: white;
+		}
+		.danhmuc>ul>li>ul>li>ul{
+			position: absolute;
+		    top: 25px;
+		    width: 264px;
+            left: 216px;
+            /*display: none;*/
+		}
+		.danhmuc>ul>li>ul>li>ul>li{
+			   display: block;
+			    background-color: #78b43d;
+		}
+		.danhmuc>ul>li>ul>li>ul>li:hover{
+			    background-color: red;
+		}
+		.danhmuc>ul>li>ul>li>ul>li:hover>ul{
+			display: block;
+		}
+		.danhmuc>ul>ul>ul>li{
+			display: none;
+			   
+		}
+		.danhmuc>ul>ul>ul>li: hover>li{
+			display: block;
+		}
+		.danhmuc>ul>li>ul>li>ul>li>a{
+			color: black;
+			text-decoration: none;
+		}
+		.danhmuc>ul>li>ul>li>ul>li>a:hover{
+			color: white;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="menu">
+		<div class="logo">
+		<div class="danhmuc">
+			<ul>
+				<li><a href="#">Xem danh mục</a>
+                     <ul>
+						<li><a href="#">Trang chủ 24 giờ</a></li>
+						<li><a href="#">Tin tức trong ngày</a>
+                              <ul>
+                              	<li><a href="#">Tin Hà Nội</a></li>
+								<li><a href="#">Tin TP Hồ Chí Minh</a></li>
+								<li><a href="#">Tin Đà Nẵng</a></li>
+								<li><a href="#">Tai nạn giao thông</a></li>
+								<li><a href="#">Tin Cần Thơ</a></li>
+								<li><a href="#">Tin thời tiết</a></li>
+						        <li><a href="#">Dự báo thời tiết</a></li>
+                              </ul>
+						</li>
+						<li><a href="#">Bóng đá</a></li>
+						<li><a href="#">Thế giới</a></li>
+						<li><a href="#">Thời trang</a></li>
+						<li><a href="#">An ninh Xã hội</a></li>
+						<li><a href="#">Thời trang Hi-tech</a></li>
+						<li><a href="#">Tài chính-Bất động sản</a></li>
+						<li><a href="#">Ẩm thực</a></li>
+						<li><a href="#">Làm đẹp</a></li>
+						<li><a href="#">Đời sống Showbiz</a></li>
+						<li><a href="#">Giải trí</a></li>
+						<li><a href="#">Bạn trẻ cuộc sống</a></li>
+						<li><a href="#">Giáo dục-du học</a></li>
+						<li><a href="#">Thể thao</a></li>
+						<li><a href="#">Phi thường-kì quặc</a></li>
+						<li><a href="#">Công nghệ thông tin</a></li>
+						<li><a href="#">Ô tô</a></li>
+						<li><a href="#">Xe máy-Xe đạp</a></li>
+						<li><a href="#">Thị trường-Tiêu dùng</a></li>
+						<li><a href="#">Du lịch</a></li>
+						<li><a href="#">Sức khỏe đời sống</a></li>
+						<li><a href="#">Video tổng hợp</a></li>
+					</ul>
+
+				</li>
+				<li><a href="#">Tin tức quốc tế</a></li>
+				<li><a href="#">Hi-tech</a></li>
+				<li><a href="#">Showbiz</a></li>
+				<li><a href="#">Giải trí</a></li>
+				<li><a href="#">Sống trẻ</a></li>
+				<li><a href="#">Thể thao</a></li>
+				<li><a href="#">Sức khỏe</a></li>
+				<li><a href="#">Video</a></li>
+				<li><a href="#">Phái đẹp</a></li>
+				<li><a href="#">Game</a></li>
+			</ul>
+			
+		</div>
+</div>
+	</div>
+	
+</body>
+</html>

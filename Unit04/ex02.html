@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		#menu{
+			padding-left: 0;
+			height: 42px;
+			background-color: pink;
+		}
+		.item{
+			float: left;
+			list-style: none;
+			padding-left: 20px;
+			padding-right: 20px;
+			line-height: 40px;
+			font-size: 30px;
+			}
+		.item>a{
+			color: red;
+			text-decoration: none;
+		}
+		.item:hover{
+			background-color: black;
+		}
+		.item:hover>a{
+			color: white;
+		}
+		.submenu{
+			display: none;
+			padding-left: 0;
+			width: 160px;
+			left: 0;
+			background-color: green;
+			position: absolute;
+		}
+		
+	</style>
+</head>
+<body>
+	<div>
+		<ul id="menu">
+			<li class="item">
+				<a href="">Home</a>
+				
+				</li>
+			<li class="item">
+				<a href="">Women</a>
+				<ul class="submenu">
+					<li class="item">
+						<a href="#">Shirts</a>
+					</li>
+					<li class="item">
+						<a href="#">Pants</a>
+					</li>
+					<li class="item">
+						<a href="#">Shoes</a>
+					</li>
+				</ul>
+				</li>
+			<li class="item">
+				<a href="">Men</a>
+				</li>
+			<li class="item">
+				<a href="">Kids</a>
+				</li>
+		</ul>
+	</div>
+</body>
+</html>
