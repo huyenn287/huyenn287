@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+	<style type="text/css">
+	.title{
+		width: 100%;
+		height: 85px;
+		background-color: red;
+		margin: 0 auto;
+		height: 70px;
+		line-height: 70px;
+	}
+	.title h1{
+		color: white;
+		margin-left: 13%;
+	}
+	.menu{
+		width: 100%;
+		height: 49px;
+		background-color: #b61818;
+		margin: 0 auto;
+	}
+	.menu>ul{
+		text-decoration: none;
+		list-style: none;
+		font-family: arial;
+		display: inline-block;
+		margin-left: 10%;
+	}
+	.menu>ul>li{
+		display: inline-block;
+		padding: 0 7px;
+	}
+	.menu>ul>li:after{
+		display: inline-block;
+		content: ' ';
+		height: 25px;
+		width: 1px;
+		background: #ccc;
+		margin-left: 8px;
+		vertical-align: middle;
+	}
+	.menu>ul>li>a{
+		color: white;
+		text-decoration: none;
+		font-size: 18px;
+		
+	}
+	.menu>ul>li:hover>a{
+		color: yellow;
+	}
+	.title1{
+		width: 100%;
+		height: 137px;
+		margin: 0 auto;
+		background-color: #d5caca;
+	}
+	.title1 img{
+		margin: 30px 375px;
+	}
+	.content{
+		width: 70%;
+		height: 3580px;
+		margin: 0 auto;
+	}
+	.ngakhungbo{
+		width: 69%;
+		height: 9%;
+		float: left;
+		background-color: white;
+	}
+	.tieude h2{
+		text-align: left;
+		font-size: 34px;
+		margin: 2%;
+		color: black;
+		font-family: sans-serif;
+	}
+	.cmt{
+		width: 36%;
+		height: 0%;
+		margin: 0% 2%;
+	}
+	.cmt1{
+		margin: 19% 0 -34% 2%;
+	}
+	.ngakhungbo img{
+		float: right;
+		margin: -4px 13px;
+	}
+	.tieude1{
+		width: 69%;
+		height: 13%;
+		float: left;
+		color: black;
+	}
+	.tieude1 ul{
+		display: inline;
+		list-style: none;
+	}
+	.tieude1 li{
+		height: 100%;
+	}
+	.bongda{
+		background-color: white;
+		float: left;
+		width: 35%;
+		border-right: 1px solid #b6b5b5;
+	}
+
+	.thamnhung{
+		background-color: white;
+		width: 35%;
+		float: left;
+		border-right: 1px solid #b6b5b5;
+	}
+	.other{
+		background-color: white;
+		width: 30%;
+		float: left;
+		margin: 0-30% 0 0%;
+	}
+	.other li{
+		margin: -5% 0 -181% 6%;
+	}
+	.other>ul>li:after{
+		display: inline-block;
+		content: ' ';
+		height: 25px;
+		width: 1px;
+		background: #ccc;
+		margin-left: 8px;
+		vertical-align: middle;
+	}
+	.other p{
+		margin-left: 7%;
+		color: red;
+	}
+	.tieude2{
+		width: 69%;
+		height: 9%;
+		float: left;
+		background-color: white;
+	}
+	.cmt2{
+		height: 100%;
+		width: 50%;
+        float: left;
+        margin: 0%;
+	}
+	.cmt2 ul, .cmt3 ul{
+		list-style: none;
+	}
+	.cmt2 p, .cmt3 p{
+		float: right;
+        margin: -7% 35%;
+        color: red;
+	}
+	.cmt3{
+		height: 100%;
+		width: 50%;
+		float: right;
+		margin: 0%;
+	}
+	.cmt2>ul>li:after, .cmt3>ul>li:after{
+		display: inline-block;
+		content: ' ';
+		height: 25px;
+		width: 1px;
+		background: #ccc;
+		margin-left: 8px;
+		vertical-align: middle;
+	}
+	.tieude3{
+		width: 69%;
+		height: 12%;
+		float: left;
+		background-color: white;
+	}
+	.cmt4{
+		height: 100%;
+		width: 50%;
+        float: left;
+        margin: 0%;
+	}
+	.cmt4-1{
+       list-style: none;
+       margin: 2% -11%;
+       float: left;
+	}
+	.cmt4-2{
+       list-style: none;
+       float: right;
+       margin: -101% 0% 0% 38%;
+       font-family: arial;
+        font-size: 92%;
+	}
+	.cmt5{
+		height: 100%;
+		width: 50%;
+		float: right;
+		margin: 0%;
+	}
+	.cmt5-1{
+       list-style: none;
+       margin: 2% -11%;
+       float: left;
+	}
+	.cmt5-2{
+       list-style: none;
+       float: right;
+       margin: -101% 0% 0% 38%;
+       font-family: arial;
+        font-size: 92%;
+	}
+	.cmt4 p, .cmt5 p{
+		margin-top: -2%;
+		color: red;
+	}
+	.cmt4-2>li:after, .cmt5-2>li:after{
+		display: inline-block;
+		content: ' ';
+		height: 25px;
+		width: 1px;
+		background: #ccc;
+		margin-left: 8px;
+		vertical-align: middle;
+	}
+	.tieude4{
+		width: 69%;
+		height: 10%;
+		float: left;
+		background-color: white;
+	}
+	.tieude4-cmt{
+		float: left;
+		width: 31%;
+		margin-top: -3%;
+	}
+	.tieude4-cmt span:after{
+		display: inline-block;
+		content: ' ';
+		height: 25px;
+		width: 1px;
+		background: #ccc;
+		margin-left: 8px;
+		vertical-align: middle;
+	}
+	.tieude4-pic{
+		float: left;
+		width: 70%;
+		margin: -24% 34%;
+	}
+	.quandiem,.kinhte,.thethao,.xahoi,.hoctienganh{
+		width: 69%;
+		height: 5%;
+		background-color: white;
+
+	}
+	.pic1{
+	    float: left;
+	    width: 20%;
+	    margin: -1% 0%;
+	}
+	.cmt6{
+		float: left;
+	    margin: -15% 28%;
+	    width: 70%;
+	    font-size: 89%;
+	    font-family: arial;
+	}
+	.hinhanh{
+		width: 69%;
+		height: 15%;
+		float: left;
+		background-color: white;
+	}
+	.hinhanh-1{
+        float: left;
+        width: 50%;
+	}
+	.hinhanh-right{
+		float: right;
+	    width: 31%;
+	    height: 62%;
+	    background-color: #e3e0e0;
+	    margin-top: -289%;
+
+	}
+	.hinhanh-right ul{
+		list-style: none;
+		margin: -5% -3%;
+	}
+	.hinhanh-right h3{
+		text-align: center;
+	    font-size: 25px;
+	    font-family: arial;
+	    color: #7d7878;
+	}
+	.hinhanh-right h4{
+		float: left;
+	    margin-left: 26%;
+	    font-family: arial;
+	    color: #6c6c6c;
+	}
+	.hinhanh-right p{
+		font-size: 16px;
+       font-family: arial;
+       margin: 0 15% 0% -1%;
+	}
+	.cmt-right{
+		float: right;
+	    width: 31%;
+	    height: 24%;
+	    background-color: white;
+	    margin-top: -75%;
+	}
+	.docnhieunhat{
+		background: #e3e0e0;
+	    height: 8%;
+	    width: 100%;
+	}
+	.docnhieunhat h1{
+		float: left;
+	    margin: 4% 6%;
+	    font-family: arial;
+	    color: #7d7878;
+	}
+	.cmt-right ul{
+		list-style: none;
+        font-family: arial;
+	}
+    .cmt-right p{
+    	float: left;
+	    margin: 3% 15% 3%-8%;
+	    font-size: 19px;
+    }
+    .cmt-right hr{
+    	width: 100%;
+	    float: left;
+	    margin-left: -8%;
+    }
+    .cmt-right h3{
+	    float: right;
+	    margin: -16% 6% 0 0%;
+	    font-size: 36px;
+	    color: red;
+    }
+</style>
+</head>
+<body>
+	<div class="header">
+		<div class="title">
+			<h1>ZENT GROUP</h1>
+		</div>
+		<div class="menu">
+			<ul>
+				<li><a href="#">Tin chính</a></li>
+				<li><a href="#">Việt Nam</a></li>
+				<li><a href="#">Thế giới</a></li>
+				<li><a href="#">Diễn đàn</a></li>
+				<li><a href="#">Kinh tế</a></li>
+				<li><a href="#">Nhịp sống mới</a></li>
+				<li><a href="#">Thể thao</a></li>
+				<li><a href="#">Học tiếng Anh</a></li>
+				<li><a href="#">Hình ảnh</a></li>
+				<li><a href="#">Audio</a></li>
+				<li><a href="#">Video</a></li>
+			</ul>
+		</div>
+		
+	</div>
+	<div class="title1">
+		<img src="../Unit05/images/1.jpg">
+	</div>
+	<div class="content">
+		<div class="ngakhungbo">
+			<div class="tieude">
+				<h2>Nga nói khủng bố khiến phi cơ Nga bị đâm</h2>
+			</div>
+			<div class="cmt">
+				<p>Nga nói hành động khủng bố đã khiến chiếc phi cơ của Nga bị đâm ở Ai Cập hồi tháng 10 và giết hại tất cả 224 người trên máy bay.</p>
+				<span><i class="far fa-clock"></i> 17 tháng 11 2015</span>
+				<hr style="width: 16%; margin-left: initial;">
+			</div>
+			<div class="cmt1">
+				<p>Phi cơ Nga: 'bom trong khoang hành lí'</p>
+				<p>Nga nói chưa kết luận về vụ rơi máy bay</p>
+				<p>Máy bay hàng không Nga 'rơi vì bom'?</p>
+			</div>
+			<div class="pic">
+				<img src="../Unit05/images/2.jpg">
+			</div>
+		</div>
+		<hr style="width: 69%;	margin-left: initial;">
+		<div class="tieude1">
+			<ul>
+				<li class="bongda">
+					<img src="../Unit05/images/3.jpg">
+					<h3>Bóng dá: Tuyển Anh thẳng Pháp 2-0</h3>
+					<p>Tuyển Anh thắng Pháp 2-0 trên sân Wembley nhờ công của Alli ở phút 39 và Rooney phút 47, trong trận cầu diễn ra chỉ vài ngày sau vụ khủng bố ở Pais.</p>
+					<span><i class="far fa-clock"></i> 5 giờ trước</span>
+					<hr style="width: 16%; margin-left: initial;">
+					<p>Anh Pháp giao hữu: Trận thách thức khủng bố</p>
+				</li>
+				<li class="thamnhung">
+					<img src="../Unit05/images/4.jpg">
+					<h3>Tham nhũng, ma túy đông gấp bội 'đối lập'?</h3>
+					<p>Bộ trưởng Công an Trần Đại Quang cho biết trong hơn ba năm qua, Bộ này xác định có 350 đối tượng 'lập hội chống đối'</p>
+					<span><i class="far fa-clock"></i> 17 tháng 11 2015</span>
+					<hr style="width: 16%; margin-left: initial;">
+					<p>Luật Báo chí VN là 'vũ khí phe bảo thủ'?</p>
+					<p>Nhân sự và tư duy chính trị của Đảng</p>
+				</li>
+				<li class="other">
+					<ul>
+						<li>
+							<h3>Charlie Sheen xác nhận nhiễm HIV</h3>
+							<span><i class="far fa-clock"></i> 17 tháng 11 2015</span>
+						</li>
+						<p>Thế giới</p>
+						<hr width="80%">
+						<li>
+							<h3>Bắt nghi can vụ giết bà Hà Linh</h3>
+							<span><i class="far fa-clock"></i> 17 tháng 11 2015</span>
+						</li>
+						<p>Việt Nam</p>
+						<hr width="80%">
+						<li>
+							<h3>Úc nhận 5 người tỵ nạn Syria đầu tiên</h3>
+							<span><i class="far fa-clock"></i> 17 tháng 11 2015</span>
+						</li>
+						<p>Thế giới</p>
+					</ul>
+				</li>
+			</ul>
+		</div>
+			<hr style="width: 69%; margin-left: initial;">
+    <div class="tieude2">
+    	<div class="cmt2">
+    		<ul>
+    			<li>
+    				<h3>Tổng thống Pháp thề phá tan IS</h3>
+    		<span><i class="far fa-clock"></i> 17 tháng 11 2015</span>
+    			</li>
+    			<p>Thế giới</p>
+    			<hr>
+    			<li>
+    				<h3>Sam Rainsy hoãn ngày về nước</h3>
+    		<span><i class="far fa-clock"></i> 17 tháng 11 2015</span>
+    			</li>
+    			<p>Thế giới</p>
+    			<hr>
+    			<li>
+    				<h3>Nhiều bang Mỹ ngưng nhận tỵ nạn Syria</h3>
+    		<span><i class="far fa-clock"></i> 17 tháng 11 2015</span>
+    			</li>
+    			<p>Thế giới</p>
+    		</ul>
+    		
+    	</div>
+    	<div class="cmt3">
+    		<ul>
+    			<li>
+    				<h3>Cực cán bộ an ninh bị tù vì Facebook</h3>
+    		<span><i class="far fa-clock"></i> 17 tháng 11 2015</span>
+    			</li>
+    			<p>Việt Nam</p>
+    			<hr>
+    			<li style="margin-top: -6%;">
+    				<h3>Anh-Pháp: "Không phải là trận cầu thông thường"</h3>
+    		<span><i class="far fa-clock"></i> 17 tháng 11 2015</span>
+    			</li>
+    			<p>Thể thao</p>
+    			<hr>
+    			<li>
+    				<h3>Vietcombank ngưng dịch vụ ATM cho ngoại kiều</h3>
+    		<span><i class="far fa-clock"></i> 16 tháng 11 2015</span>
+    			</li>
+    			<p>Kinh tế</p>
+    		</ul>
+    	</div>
+    </div>
+    <hr style="width: 69%; margin-left: initial;">
+    <div class="tieude3">
+    	<h2>Nghe/Xem</h2>
+    	<div class="cmt4">
+    		<ul class="cmt4-1">
+    			<li>
+    				<img src="../Unit05/images/5.jpg">
+    			</li>
+    			<br>
+    			<li>
+    				<img src="../Unit05/images/6.jpg">
+    			</li>
+    			<br>
+    			<li>
+    				<img src="../Unit05/images/7.jpg">
+    			</li>
+    			<br>
+    		</ul>
+    		<ul class="cmt4-2">
+    			<li>
+    				<h3>Đại biểu Nghĩa hỏi Thủ tướng 'quá khó'</h3>
+    				<span><i class="far fa-clock"></i> 17 tháng 11 2015</span>
+    			</li>
+    			<p>Multimedia</p>
+    			<li>
+    				<h3>Tưởng niệm các nạn nhân Paris tại Hà Nội</h3>
+    				<span><i class="far fa-clock"></i> 16 tháng 11 2015</span>
+    			</li>
+    			<p>Multimedia</p>
+    			<li>
+    				<h3>Cảnh sát giải cứu con tin ở Paris</h3>
+    				<span><i class="far fa-clock"></i> 14 tháng 11 2015</span>
+    			</li>
+    			<p>Multimedia</p>
+    		</ul>
+    	</div>
+    	<div class="cmt5">
+    		<ul class="cmt5-1">
+    			<li>
+    				<img src="../Unit05/images/8.jpg">
+    			</li>
+    			<br>
+    			<li>
+    				<img src="../Unit05/images/9.jpg">
+    			</li>
+    			<br>
+    			<li>
+    				<img src="../Unit05/images/10.jpg">
+    			</li>
+    			<br>
+    		</ul>
+    		<ul class="cmt5-2">
+    			<li>
+    				<h3>Thủ tướng 'sẽ không đi ra ngoài đường lối'</h3>
+    				<span><i class="far fa-clock"></i> 17 tháng 11 2015</span>
+    			</li>
+    			<p>Multimedia</p>
+    			<li>
+    				<h3>'Xả súng' ở rạp hát Bataclan, Paris</h3>
+    				<span><i class="far fa-clock"></i> 16 tháng 11 2015</span>
+    			</li>
+    			<p>Multimedia</p>
+    			<li>
+    				<h3>Paris sau các vụ tấn công tối 13/11/2015</h3>
+    				<span><i class="far fa-clock"></i> 14 tháng 11 2015</span>
+    			</li>
+    			<p>Thế giới</p>
+    		</ul>
+    	</div>
+    </div>
+    <hr style="width: 69%; margin-left: initial;">
+    <div class="tieude4">
+    	<h2>Điểm nhấn</h2>
+    	<div class="tieude4-cmt">
+    		<h2>IS là gì và nguy hiểm tới đâu?</h2>
+    		<p>BBC Tiếng Việt điểm lại các quan điểm đánh giá ý thức hệ, thực lực quân sự của Nhà nước Hồi giáo</p>
+    		<span><i class="far fa-clock"></i> 16 tháng 11 2015</span>
+    		<p style="float: right; margin: -11% 8%; color: red;">Thế giới</p>
+    	</div>
+    	<div class="tieude4-pic">
+    		<img src="../Unit05/images/11.jpg">
+    	</div>
+    </div>
+    <hr style="width: 69%; margin-left: initial;">
+    <div class="quandiem">
+    	<h2>Quan điểm</h2>
+    	<div class="pic1">
+    		<img src="../Unit05/images/12.jpg">
+    	</div>
+    	<div class="cmt6">
+    		<h3>Nhiều người Hồi giáo 'đã khóc' trước Bataclan</h3>
+    		<p>Nhà báo tự do Phạm Cao Phong nói nhiều người đã thực sự khóc và hát La Marseillaise ở nơi xảy ra khủng bố Paris.</p>
+    		<span><i class="far fa-clock"></i> 15 tháng 11 2015</span>
+    	</div>
+    </div>
+    <hr style="width: 69%; margin-left: initial;">
+    <div class="kinhte">
+    	<h2>Kinh tế</h2>
+    	    <div class="pic1">
+    		<img src="../Unit05/images/13.jpg">
+    	</div>
+    	<div class="cmt6">
+    		<h3>Cổ phiếu du lịch giảm vì tấn công Paris</h3>
+    		<p>Cổ phiếu của các hãng hàng không du lịch của châu Âu bị giảm mạnh vào thứ Hai vì nhà đầu tư lo lắng về ảnh hưởng của các cuộc tấn công ở Paris.</p>
+    		<span><i class="far fa-clock"></i> 17 tháng 11 2015</span>
+    	</div>
+    </div>
+    <hr style="width: 69%; margin-left: initial;">
+    <div class="thethao">
+    	<h2>Thể thao</h2>
+    	     <div class="pic1">
+    		<img src="../Unit05/images/14.jpg">
+    	</div>
+    	<div class="cmt6">
+    		<h3>Anh Pháp giao hữu: Trận thách thức khủng bố</h3>
+    		<p>Tuyển Pháp sẽ đến Anh với một thông điệp của sự đề kháng sau vụ tấn công đẫm máu.</p>
+    		<span><i class="far fa-clock"></i> 17 tháng 11 2015</span>
+    	</div>
+    </div>
+    <hr style="width: 69%; margin-left: initial;">
+    <div class="xahoi">
+    	<h2>Xã hội</h2>
+    	    <div class="pic1">
+    		<img src="../Unit05/images/15.jpg">
+    	</div>
+    	<div class="cmt6">
+    		<h3>Dấu ấn Mao: Từ Hồng vệ binh tới ông Tập</h3>
+    		<p>Bộ đồ đặc trưng thời Cách mạng Văn hóa được kẻ xấu trong phim phương Tây ưa dùng, và cũng là lựa chọn ưa thích của chủ tịch TQ.</p>
+    		<span><i class="far fa-clock"></i> 13 tháng 11 2015</span>
+    	</div>
+    </div>
+    <hr style="width: 69%; margin-left: initial;">
+    <div class="hoctienganh">
+    	<h2>Học tiếng Anh</h2>
+    	    <div class="pic1">
+    		<img src="../Unit05/images/16.jpg">
+    	</div>
+    	<div class="cmt6">
+    		<h3>Máy bay Nga bị rớt tại Sinai, Ai Cập</h3>
+    		<p>Viên chức hàng không Nga loại bỏ lỗi kỹ thuật hay lỗi phi công trong vụ rớt máy bay tại Sinai, Ai Cập.</p>
+    		<span><i class="far fa-clock"></i> 13 tháng 11 2015</span>
+    	</div>
+    </div>
+    <div>
+    		<h2>Học viện Báo chí</h2>
+    </div>
+    <div class="hinhanh">
+    	<h2>Hình ảnh</h2>
+    	<div class="hinhanh-1">
+    		<img src="../Unit05/images/17.jpg">
+    		<h3>Giải ảnh CGAP 2015</h3>
+    		<p>Tác giả VN là trong số đoạt giải cuộc thi ảnh CGAP nhằm cho thấy cuộc sống người nghèo được cải thiện qua các dịch vụ tài chính.</p>
+    	</div>
+    	<div class="hinhanh-1">
+    		<img src="../Unit05/images/18.jpg">
+    		<h3>Ảnh dự thi National Geographic</h3>
+    		<p>Một số bức ảnh tham gia dự thi cuộc thi National Geographic 2015 với các chủ đề Con người, Nơi chốn và Thiên nhiên.</p>
+    	</div>
+    </div>
+    <div class="hinhanh-right">
+    	<h3>Góc nhìn và chuyên mục</h3>
+    	<ul>
+    		<li>
+    			<img src="../Unit05/images/19.jpg">
+    			<p><b>Bí ẩn những chuyến tàu ma ở Anh</b></p>
+    		</li>
+    		<h4>QUẢNG CÁO</h4>
+    		<li>
+    			<img src="../Unit05/images/20.jpg">
+    			<p><b>Đài Loan, Tây Tạng và những quốc gia không tồn tại</b></p>
+    		</li>
+    		<br>
+    		<li>
+    			<img src="../Unit05/images/21.jpg">
+    			<p><b>Nghi phạm chính vụ Paris: Abdelhamid Abaaoud</b></p>
+    		</li>
+    		<br>
+    		<li>
+    			<img src="../Unit05/images/22.gif">
+    			<p><b>Việt Nam: 'Người tham nhũng xử lý người chống'</b></p>
+    		</li>
+    		<br>
+    		<li>
+    			<img src="../Unit05/images/23.jpg">
+    			<p><b>Nhà nước Hồi giáo thay đổi chiến thuật</b></p>
+    		</li>
+    		<br>
+    		<li>
+    			<img src="../Unit05/images/24.jpg">
+    			<p><b>K-9 là gì và Việt Tân ứng xử ra sao?</b></p>
+    		</li>
+    		<br>
+    		<li>
+    			<img src="../Unit05/images/25.jpg">
+    			<p><b>Dùng vũ lực sẽ gặp cách mạng từ dưới lên?</b></p>
+    		</li>
+    		<br>
+    		<li>
+    			<img src="../Unit05/images/26.jpg">
+    			<p><b>Luật Báo chí VN là 'vũ khí phe bảo thủ'?</b></p>
+    		</li>
+    		<br>
+    		<li>
+    			<img src="../Unit05/images/27.gif">
+    			<p><b>'Côn đồ đánh chứ không phải công an'</b></p>
+    		</li>
+    		<br>
+    		<li>
+    			<img src="../Unit05/images/28.jpg">
+    			<p><b>Một chút quyền lợi có lung lạc được bạn?</b></p>
+    		</li>
+    		<br>
+    	</ul>
+
+    </div>
+    <div class="cmt-right">
+    	<div class="docnhieunhat"><h1>Đọc nhiều nhất</h1></div>
+    	<ul>
+    		<li>
+    			<p>Việt Nam: 'Người tham nhũng xử lý người chống'</p>
+    			<h3>1</h3>
+    		</li>
+    		<hr>
+    		<li>
+    			<p>Tham nhũng, ma túy đông gấp bội 'đối lập'?</p>
+    			<h3>2</h3>
+    		</li>
+    		<hr>
+    		<li>
+    			<p>Cựu cán bộ an ninh bị tù vì Facebook</p>
+    			<h3>3</h3>
+    		</li>
+    		<hr>
+    		<li>
+    			<p>Bắt nghi can vụ giết bà Hà Linh</p>
+    			<h3>4</h3>
+    		</li>
+    		<hr>
+    		<li>
+    			<p>Thủ tướng và cái giá của sự 'ngạo mạn'</p>
+    			<h3>5</h3>
+    		</li>
+    		<hr>
+    		<li>
+    			<p>Nga nói khủng bố khiến phi cơ Nga bị đâm</p>
+    			<h3>6</h3>
+    		</li>
+    		<hr>
+    		<li>
+    			<p>IS là gì và nguy hiểm tới đâu?</p>
+    			<h3>7</h3>
+    		</li>
+    		<hr>
+    		<li>
+    			<p>Charlie Sheen xác nhận nhiễm HIV</p>
+    			<h3>8</h3>
+    		</li>
+    		<hr>
+    		<li>
+    			<p>Bí ẩn những chuyến tàu ma ở Anh</p>
+    			<h3>9</h3>
+    		</li>
+    		<hr>
+    		<li>
+    			<p>Bóng đá: Tuyển Anh thắng Pháp 2 - 0</p>
+    			<h3>10</h3>
+    		</li>
+    	</ul>
+    </div>
+	</div>
+	<div class="footer">
+		
+	</div>
+</body>
+</html>
