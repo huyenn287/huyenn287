@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+     <script type="text/javascript">
+     	do{
+     		var m=parseInt(prompt("Nhập vào m="));
+     		var n=parseInt(prompt("Nhập vào n="));
+     		if(m<n){
+     			alert("Bạn phải nhập m>=n!");
+     		}
+     	}while (m<n) 
+     	var sum=0;
+     	var k=parseInt(prompt("Nhập k="));
+     	for (var i = m-1; i>=n+1; i--) {
+     		if(i%k==0){
+     			sum+=i;
+     		}
+     	}
+     	alert(sum);
+     </script>	
+</body>
+</html>
