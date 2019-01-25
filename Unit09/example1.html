@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<input type="text" id="text" placeholder="input content">
+	<button id="add">Add</button>
+
+	<table>
+		<tbody id="content">
+		     
+		</tbody>
+	</table>
+	<button onclick="taggleChecked(true)">Check All</button>
+	<button onclick="taggleChecked(false)">Uncheck All</button>
+
+	<script type="text/javascript">
+		document.getElementById('add').addEventListener('click',
+            function(){
+            	var input=document.getElementById('text')
+
+            	if(input.value==''){
+            		alert('Bạn phải nhập nội dung!');
+            	}else{
+            	var tr=`<tr>
+            	    <td>
+            	      <input type='checkbox' name="">
+            	    </td>
+            	    <td>
+            	      `+input.value+`
+            	    </td>
+            	    <td>
+            	      <button onclick="funEdit('`+input.value+`')">Edit</button>
+            	    </td>
+            	    <td>
+            	      <button onclick="funDel(this)">Delete</button>
+            	    </td>
+            	      </tr>`
+
+          var content= document.getElementById('content')
+          content.innerHTML+=tr
+          input.value=''
+            }
+          }
+			)
+          function funDel(a){
+              a.parentNode.parentNode.remove()
+          }
+
+        function taggleChecked(status){
+        	var checkboxs= document.getElementsByTagName('input');
+        	for (var i = 0; i < checkboxs.length; i++) {
+        		checkboxs[i].checked=status
+        	}
+        }
+        			// if(checkboxs[i].checked){
+           //                checkboxs[i].checked=false;
+        			// }else{
+        			// 	checkboxs[i].checked=true;
+        		 //  }
+        			// checkboxs[i].checked!=checkboxs[i].checked; thay cho if else
+        function funEdit(text){
+        	var input=document.getElementById('text')
+        	input.value=text
+
+        	document.getElementById('add').setAttribute('id','update')
+        	document.getElementById('update').innerHTML='Update'
+        }
+	</script>
+</body>
+</html>

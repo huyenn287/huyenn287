@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+        img{
+        	margin-left: 25%
+        }
+
+		button{
+			padding: 9px;
+		    background-color: #ddd3d3;
+		    font-size: 30px;
+		    color: white;
+		    opacity: 0.5;
+		}
+		
+	</style>
+</head>
+<body>
+   <div>
+	    <img id="slider" src="images/1.jpg" width="650" height="450">
+	    <button style="border-radius: 10px 0px 0px 10px; margin-left: -42%" onclick="prev()"><</button>
+	    <button style="border-radius: 0px 10px 10px 0px; margin-left: 35%" onclick="next()">></button>
+  </div>
+
+<script>
+    var images = [
+        "images/1.jpg",
+        "images/2.jpg",
+        "images/3.jpg",
+         "images/4.jpg",
+        "images/5.jpg"
+    ];
+    var num = 0;
+
+    function next() {
+        var slider = document.getElementById("slider");
+        num++;
+        if(num >= images.length) {
+            num = 0;
+        }
+        slider.src = images[num];
+    }
+
+    function prev() {
+        var slider = document.getElementById("slider");
+        num--;
+        if(num < 0) {
+            num = images.length-1;
+        }
+        slider.src = images[num];
+    }
+    setInterval("next()",5000);
+
+    
+</script>
+
+
+</body>
+</html>

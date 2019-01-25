@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<!-- <script type="text/javascript">
+		var p= document.createElement("p");
+		var text= document.createTextNode("Zent Group xin chào các bạn!");
+
+		p.appendChild(text);
+		document.getElementsByTagName('body')[0].appendChild(p);
+	</script> -->
+
+	<div id="content">
+            <h5>Xin chào các bạn</h5>          
+            <h5>chúc vui vẻ khi học bài</h5>
+        </div>
+       
+        <input type="button" value="View" id="btn-view"/>
+       
+        <script language="javascript">
+          // Lấy button
+          var button = document.getElementById("btn-view");
+           
+          // Thêm sự kiện click cho button
+          button.addEventListener("click", function(){
+            // Tạo mới một thẻ h1
+            var h1 = document.createElement("h1");
+ 
+            // Thêm nội dung HTML vào thẻ h1
+            h1.innerHTML = "ZentGroup xin chao cac ban"
+ 
+            // Lấy thẻ ngoài cùng
+            var element = document.getElementById("content");
+             
+            // Lấy thẻ cần isertBefore
+            var element_child = document.getElementsByTagName("h5")[1];
+             
+            // Insert Before
+            element.insertBefore(h1, element_child);
+          });
+        </script>
+
+         <div id="content">
+            <h5>ZentGroup</h5>
+        </div>
+       
+        <input type="button" value="Replace" id="btn-replace"/>
+       
+        <script language="javascript">
+          // Lấy button
+          var button = document.getElementById("btn-replace");
+           
+          // Thêm sự kiện click cho button
+          button.addEventListener("click", function(){
+             
+            // Tạo mới một thẻ
+            var p = document.createElement("h1");
+            p.innerHTML = "Xin chào!";
+                 
+            // Lấy thẻ cần replace
+            var replace = document.getElementsByTagName("h5")[0];
+             
+            // Replace
+            document.getElementById("content").replaceChild(p, replace);
+          });
+        </script>
+
+        <script language="javascript">
+          function change()
+          {
+             // Lấy đối tượng
+             var object = document.getElementById("object");
+          
+             // lấy thuộc tính type
+             var type = object.type;
+         
+             // kiểm tra thuộc tính type và thay đổi
+            if (type == "button"){
+           
+               object.type = 'text';
+            }
+            else{
+                object.type = "button";
+            }
+         
+          }
+        </script>
+        <input type="button" value="CLick me" onclick="change()" id="object" />
+</body>
+</html>
