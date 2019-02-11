@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style type="text/css">
+		.container{
+			max-width: 640px;
+			padding: 1%;
+			margin: 30px auto;
+			background-color: black;
+		}
+		h2{
+			color: white;
+            font-size: 50px;
+		}
+		h1{
+			font-size: 24px;
+			font-weight: 500;
+			margin: 0 0 10px;
+		}
+		h3{
+			color: #a0e974;
+            margin: -11% 0 0% 35%;
+		}
+		p{
+			color: white;
+			margin: 1% 0% 6% 8%;
+		}
+		.akordeon{
+			margin: 0 0 50px;
+		}
+		.akordeon .title h1{
+			text-decoration: none;
+			background-color: red;
+			color: #fff;
+			padding: 20px 55px 20px 25px;
+			display: block;
+			position: relative;
+		}
+		.akordeon .title h1: after{
+			content: '';
+			border-style: solid;
+			border-width: 2px 2px 0 0;
+			border-color: #fff;
+			width: 10px;
+			height: 10px;
+			position: absolute;
+			right: 25px;
+			top: 50%;
+		}
+		.akordeon .title h1:hover{
+			color: #a0e974;
+		}
+		.akordeon .title.active h1{
+			background-color: gray;
+		}
+		.akordeon .title.active h1:hover{
+			background-color: #9d4a4a;
+		}
+		.akordeon .content{
+			border:1px solid yellow;
+			padding: 25px;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		 <div class="akordeon">
+		 	<h2><i>Akordeon</i></h2>
+		 	<h3><i>Vector PSD</i></h3>
+		 	<p>Astylo modern accordion</p>
+		     <div class="holder">
+			    <div class="title active">
+			          <h1>First Panel</h1>
+		        </div>
+		        <div class="content">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae ratione fugit dignissimos similique soluta repellat earum commodi totam, adipisci fugiat natus sed mollitia fuga repellendus voluptatem corporis error cumque. Veritatis!</p>
+		        </div>
+		     </div>
+		<div class="holder">
+			    <div class="title active">
+			          <h1>Second Panel</h1>
+		        </div>
+		        <div class="content">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae ratione fugit </p>
+		        </div>
+		     </div>
+		<div class="holder">
+			    <div class="title active">
+			          <h1>Third Panel</h1>
+		        </div>
+		        <div class="content">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+		        </div>
+		     </div>
+		<div class="holder">
+			    <div class="title active">
+			          <h1>Fourth Panel</h1>
+		        </div>
+		        <div class="content">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae ratione fugit dignissimos similique soluta repellat earum commodi totam</p>
+		        </div>
+		     </div>
+	</div>
+	</div>
+
+	<script type="text/javascript">
+         var acc = document.getElementsByClassName("title active");
+            var i;
+
+        for (i = 0; i < acc.length; i++) {
+         acc[i].addEventListener("click", function() {
+                  this.classList.toggle("active");
+         var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+                  panel.style.display = "none";
+               } else {
+                  panel.style.display = "block";
+    }
+  });
+}
+	</script>
+</body>
+</html>

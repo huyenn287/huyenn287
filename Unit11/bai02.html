@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		.form{
+			background-color: red;
+		    margin-left: 30%;
+		    margin-right: 30%;
+		    padding: 1% 0% 2% 0%;
+		}
+		p{
+			text-align: center;
+		    font-family: cursive;
+		    color: white;
+		     font-size: 30px;
+		}
+		#text{
+			margin-left: 7%;
+            width: 64%;
+            height: 30px;
+		}
+		#add{
+			width: 21%;
+			height: 36px;
+		}
+		table{
+			background-color: #cec7c7;
+		    width: 40%;
+		    margin-left: 30%;
+		}
+		tbody>tr:hover{
+			background-color: darkgray;
+			text-decoration: line-through;
+			color: white;
+		}
+	</style>
+</head>
+<body>
+	<div class="form">
+	<p>My To Do List</p>
+	<input type="text" id="text" placeholder="Title...">
+	<button id="add">Add</button>
+   </div>
+	<table>
+		<tbody id="content">
+		     
+		</tbody>
+	</table>
+   
+	<script type="text/javascript">
+		document.getElementById('add').addEventListener('click',
+            function(){
+            	var input=document.getElementById('text')
+
+            	if(input.value==''){
+            		alert('Bạn phải nhập nội dung!');
+            	}else{
+            	var tr=`<tr>
+            	    <td>
+            	      `+input.value+`
+            	    </td>
+            	    <td>
+            	      <button  style="float: right; height:30px; font-family: sans-serif;" onclick="funDel(this)">x</button>
+            	    </td>
+            	      </tr>`
+
+          var content= document.getElementById('content')
+          content.innerHTML+=tr
+          input.value=''
+            }
+          }
+			)
+          function funDel(a){
+              a.parentNode.parentNode.remove()
+          }
+	</script>
+</body>
+</html>
