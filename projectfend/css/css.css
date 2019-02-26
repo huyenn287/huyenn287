@@ -1,0 +1,188 @@
+*{
+	margin: 0px;
+	padding:0px;
+}
+.container-fluid{
+	padding:0;
+}
+.menu{
+	width: 90%;
+	margin: 0 auto;
+	
+}
+.bgimg{
+	background-image: url(../images/123.jpg);
+	background-size: 100%;
+	height: 500px;
+}
+.center{
+	text-align: center;
+}
+.jumbotron1{
+	width: 50%;
+	margin: 0 auto;
+}
+.left{
+	float: left;
+}
+.ringht{
+	float: right;
+}
+.card3{
+	width: 90%;
+	margin: 0 auto;
+}
+.bgimg2{
+	background-image: url(../images/bg-section-facts.jpg);
+	color: #fff;
+	
+	background-size: 100%;
+}
+.bgimg2 span{
+	color: yellow;
+	font-size: 30px;
+}
+.thei{
+	font-size: 40px;
+	line-height: 126px;
+}
+.thei:hover{
+	color: #FF4000;
+}
+.thei2{
+
+	font-size: 50px;
+	    line-height: 74px;
+    background: #7eed10;
+    border-radius: 50px;
+    text-align: center;
+    width: 74px;
+
+}
+.thei2:hover{
+	color: yellow;
+
+}
+
+.border{
+	border: 0px;
+}
+.margin-card{
+	margin-top:50px;
+}
+.card-img{
+	height: 60px;
+	border-radius: 40px;   
+	text-align: center;
+	  margin: -21px 39% 50px;
+}
+.card-p{
+	text-align: center;width: 95% ;margin: 0 auto
+}
+.card-li{
+	font-size: 12px
+}
+.margin{
+	margin: 0 auto;
+}
+.paddding{
+	padding: 0px;
+}
+.the-i-bootom{
+	    font-size: 48px;
+    color: #fff;
+    background: red;
+    border-radius: 48px;
+   
+    border: 1px solid red;
+    padding-top: 0px;
+    line-height: 48px
+}
+.li{
+	list-style: none;
+
+}
+.the-p-bootom{
+	line-height: 100px;
+	color: #685757
+}
+.trang{
+	color: #fff;
+
+}
+
+.lead:hover{
+		color: red;
+}
+.b:hover .thei2{
+	color: red;
+}
+@keyframes example {
+    10% {
+        margin-top: 0px;
+    }
+    40% {
+        margin-top: -55px;
+    }
+    60% {
+        margin-top: -110px;
+    }
+    80% {
+        margin-top: -165px;
+    }
+    100% {
+        margin-top: 0px;
+    }   
+}
+.slide .content {
+    height: 50px;
+    overflow: hidden;
+}
+
+.slide .content .content-box {
+    height: auto;
+}
+
+.slide .content .content-box {
+    animation-name: example;
+    animation-duration: 8s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+}
+@media(max-width: 770px){
+	.nonedt{
+		display: none;
+	}
+	.margindt{
+		margin: 0 auto
+	}
+	.margin-top{
+		margin-top: 25px
+	}
+}
+
+@media(min-width: 771px) and ( max-width: 1200px){
+	.nonetab{
+		display: none;
+	}
+	.righttab{
+		float: right;
+	}
+	.lefttab{
+		float: left;
+	}
+}
+@media(min-width: 1201px){
+	.rightxl{
+		float: right;
+	}
+}
+p:hover{
+	color: red;
+}
+span:hover{
+	color: #17f707;
+}
+.top:hover{
+	color: red
+}
